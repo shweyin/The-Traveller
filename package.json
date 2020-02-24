@@ -1,0 +1,60 @@
+{
+  "name": "bts530",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p dev:server dev:client",
+    "dev:client": "parcel src/client/index.html",
+    "dev:server": "node-dev --no-notify src/server/index.js"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@feathersjs/authentication-client": "^4.3.5",
+    "@feathersjs/authentication-local": "^4.3.5",
+    "@feathersjs/configuration": "^4.3.4",
+    "@feathersjs/express": "^4.3.5",
+    "@feathersjs/feathers": "^4.3.4",
+    "@feathersjs/socketio": "^4.3.5",
+    "@feathersjs/socketio-client": "^4.3.5",
+    "babel-eslint": "^10.0.3",
+    "bootstrap": "^4.3.1",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "feathers-mongodb": "^5.0.1",
+    "feathers-nedb": "^5.1.0",
+    "mongodb": "^3.3.2",
+    "mongodb-memory-server": "^5.2.8",
+    "nedb": "^1.8.0",
+    "node-dev": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "qs": "^6.9.0",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-select": "^3.0.8",
+    "socket.io-client": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap-material-design-icons": "^2.2.0",
+    "bootstrap-slider": "^10.6.2",
+    "prop-types": "^15.7.2",
+    "react-bootstrap-slider": "^2.2.2",
+    "react-datepicker": "^2.10.1",
+    "react-sortable-hoc": "^1.10.1"
+  }
+}

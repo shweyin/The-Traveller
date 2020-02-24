@@ -1,0 +1,16 @@
+{
+  "authentication": {
+    "secret": "Group_06",
+    "entity": "user",
+    "service": "users",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "dbName": "database",
+    "local": {
+      "usernameField": "username",
+      "passwordField": "password"
+    }
+  }
+}
