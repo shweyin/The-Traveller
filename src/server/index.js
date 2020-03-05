@@ -22,4 +22,7 @@ database(srv)
   .then(() => srv.configure(auth))
   .catch(console.log)
 
+srv.use(express.static(__dirname + '/../../dist'));
+
 srv.listen(srv.get('port'))
+

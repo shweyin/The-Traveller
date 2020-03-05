@@ -59958,7 +59958,7 @@ if (typeof module !== 'undefined') {
 },{"./core":"../../node_modules/@feathersjs/authentication-client/lib/core.js","./hooks":"../../node_modules/@feathersjs/authentication-client/lib/hooks/index.js","./storage":"../../node_modules/@feathersjs/authentication-client/lib/storage.js"}],"../../config/development.json":[function(require,module,exports) {
 module.exports = {
   "host": "localhost",
-  "port": 1235
+  "port": 8080
 };
 },{}],"srv.js":[function(require,module,exports) {
 "use strict";
@@ -75222,7 +75222,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52735" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59572" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
