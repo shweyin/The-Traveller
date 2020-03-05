@@ -8,11 +8,12 @@ module.exports = async app => {
   const dbName = app.get('dbName')
 
   // run dev mongodb server
-  const mongod = dev && new MongoMemoryServer({
+  const mongod = new MongoMemoryServer({
     instance: { dbName }
   })
 
-  const uri = dev ? await mongod.getConnectionString() : app.get('dbURI')
+  //const uri = dev ? await mongod.getConnectionString() : app.get('dbURI')
+  const uri = await mongod.getConnectionString()
   const client = await MongoClient.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true

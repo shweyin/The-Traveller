@@ -7,7 +7,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-dev --no-notify src/server/index.js",
+    "start": "node ./src/server/index.js",
     "dev": "run-p dev:server dev:client",
     "dev:client": "parcel src/client/index.html",
     "build": "parcel build src/client/index.html",
